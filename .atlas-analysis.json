@@ -1,0 +1,173 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "Firestore ORM",
+  "projectDescription": "Type-safe Firestore ORM with validation, soft deletes, lifecycle hooks, and powerful query builder for Firebase Admin SDK",
+  "theme": "sequoia",
+  "primaryColor": "#848c8e",
+  "lightColor": "#11161e",
+  "darkColor": "#cfd0d2",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/repository-pattern",
+              "concepts/soft-deletes",
+              "concepts/schema-validation",
+              "concepts/lifecycle-hooks"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/crud-operations",
+              "guides/querying",
+              "guides/pagination",
+              "guides/bulk-operations",
+              "guides/transactions",
+              "guides/subcollections",
+              "guides/dot-notation",
+              "guides/streaming",
+              "guides/real-time"
+            ]
+          },
+          {
+            "group": "Framework Integration",
+            "pages": [
+              "frameworks/express",
+              "frameworks/nestjs",
+              "frameworks/overview"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/error-handling",
+              "advanced/performance",
+              "advanced/best-practices"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core Classes",
+            "pages": [
+              "api/firestore-repository",
+              "api/query-builder"
+            ]
+          },
+          {
+            "group": "Methods",
+            "pages": [
+              "api/create-operations",
+              "api/read-operations",
+              "api/update-operations",
+              "api/delete-operations",
+              "api/query-methods",
+              "api/transaction-methods",
+              "api/hook-methods"
+            ]
+          },
+          {
+            "group": "Utilities",
+            "pages": [
+              "api/errors",
+              "api/validation",
+              "api/dot-notation-utils"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Examples",
+        "groups": [
+          {
+            "group": "Real-World Examples",
+            "pages": [
+              "examples/ecommerce",
+              "examples/multi-tenant",
+              "examples/user-management"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Type-safe TypeScript API with intelligent type inference",
+    "Zod schema validation for automatic data validation",
+    "Built-in soft deletes with recovery capabilities",
+    "Lifecycle hooks for logging, analytics, and side effects",
+    "Powerful query builder with pagination and aggregation",
+    "Transaction support for atomic operations",
+    "Subcollection navigation with full query support",
+    "Dot notation for nested field updates",
+    "Streaming support for large datasets",
+    "Real-time subscriptions with snapshot listeners",
+    "Bulk operations with automatic batching",
+    "Framework-agnostic with Express and NestJS examples"
+  ],
+  "publicApiSurface": [
+    "FirestoreRepository - Main repository class for collection operations",
+    "FirestoreRepository.withSchema() - Factory method with Zod validation",
+    "FirestoreQueryBuilder - Fluent query builder for complex queries",
+    "create() - Create a single document with validation",
+    "bulkCreate() - Create multiple documents in batches",
+    "getById() - Fetch document by ID",
+    "list() - List documents with optional limit",
+    "findByField() - Find documents by field value",
+    "update() - Update document with partial data",
+    "bulkUpdate() - Update multiple documents in batches",
+    "upsert() - Create or update document",
+    "delete() - Permanently delete document",
+    "softDelete() - Mark document as deleted (recoverable)",
+    "restore() - Restore soft-deleted document",
+    "bulkDelete() - Delete multiple documents",
+    "bulkSoftDelete() - Soft delete multiple documents",
+    "bulkRestore() - Restore multiple soft-deleted documents",
+    "purgeDelete() - Permanently delete all soft-deleted documents",
+    "query() - Start building a query with fluent API",
+    "where() - Add filter conditions to query",
+    "orderBy() - Sort query results",
+    "limit() - Limit number of results",
+    "paginate() - Cursor-based pagination",
+    "offsetPaginate() - Offset-based pagination",
+    "aggregate() - Aggregate operations (sum, avg, count)",
+    "count() - Count matching documents",
+    "exists() - Check if matching documents exist",
+    "distinctValues() - Get distinct field values",
+    "select() - Select specific fields",
+    "stream() - Stream results for large datasets",
+    "onSnapshot() - Subscribe to real-time updates",
+    "runInTransaction() - Execute operations in transaction",
+    "getForUpdate() - Read document in transaction context",
+    "updateInTransaction() - Update document in transaction",
+    "deleteInTransaction() - Delete document in transaction",
+    "subcollection() - Access nested subcollections",
+    "on() - Register lifecycle hooks",
+    "off() - Remove lifecycle hooks",
+    "NotFoundError - Document not found exception",
+    "ValidationError - Schema validation failure",
+    "ConflictError - Business logic conflict",
+    "FirestoreIndexError - Missing composite index error",
+    "errorHandler - Express middleware for error handling",
+    "makeValidator() - Create custom validators",
+    "isDotNotation() - Check if key uses dot notation",
+    "expandDotNotation() - Expand dot notation to nested object",
+    "mergeDotNotationUpdate() - Merge dot notation updates"
+  ]
+}
